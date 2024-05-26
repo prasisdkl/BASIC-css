@@ -1,3 +1,100 @@
-h1{
-    background-color: brown;
+body{
+    margin: 0;
+    background-color: lightblue;
+}
+header{
+    background-color: rgb(0, 191, 255);
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav{
+    overflow: hidden;
+    background-color: rgb(194, 222, 246);
+}
+
+nav a{
+    float: left;
+    color: rgb(255, 0, 0);
+    padding: 14px 12px 11px 10px;
+    text-decoration: none;
+}
+
+nav a:hover{
+background-color: black;
+color: antiquewhite;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+
+.column.side{
+    width: 20%;
+}
+
+.column.middle{
+    width: 50%;
+}
+
+footer{
+    clear: both;
+    background-color: rgb(0, 191, 255);
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+div.gallery{
+    margin: 5px;
+    border: 1opx solid black;
+    float: left;
+    width: 200px;
+}
+
+div.gallery:hover{
+    border: 5px solid red;
+ 
+}
+
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+div.description{
+    padding: 15px;
+    text-align: center;
+}
+input[type=text],select,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(215, 137, 19);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]{
+    background-color: rgb(117, 220, 255);
+    color: rgb(246, 0, 0);
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    margin: 2px;
+}
+
+@media screen and (max-width: 600px){
+    .column.side,.column.middle{
+        width: 100%;
+
+    p{
+        text-align: justify;
+    }
+}
+div.gallery{
+    margin: 5px;
+    border: 1opx solid black;
+    float: left;
+    width: 180px;
 }
